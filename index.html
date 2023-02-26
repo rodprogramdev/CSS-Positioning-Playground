@@ -43,7 +43,7 @@
 
       .box2{
         background-color: blue;
-        position:relative; 
+        /* position:relative;  */
         /* top: 10px; */
         /* left: 10px;  */
         bottom: 50px;
@@ -54,7 +54,8 @@
 
       .box3{
         background-color:green;
-        /* position: fixed; */
+        position: fixed; 
+        top:0;
       }
 
       .box4{
@@ -77,5 +78,11 @@
       <div class="box4">Box4 - Absolute</div>
       <div class="box5">Box5 - Sticky</div>
     </div>
+
+    <p>The <span>Static</span> position is the default position for all of the HTML elements. It is not positioned in any special way. It is always positioned according to the normal flow of the page.</p>
+    <p>The <span>Relative</span> position will be allowing the element to be positioned relative to its normal document flow, other elements will not be affected to fit into any gap left by the element.</p>
+    <p>The <span>Fixed</span> position will be relative to the viewport. This means it will always stay in the same place when the page is scrolled. We can use the top, right, bottom, and left properties to specify where we can position the element. </p>
+    <p> The <span>Absolute</span> position will be positioned relative to the ancestor or parent element. Unlike with the fixed position property that is relative to the view port.</p>
+    <p> The <span>Sticky</span> position will position the element based on the user scroll position.</p>
   </body>
 </html>
