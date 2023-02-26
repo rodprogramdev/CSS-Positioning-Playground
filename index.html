@@ -1,35 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS POSITIONG PLAYGROUND</title>
-     <style>
-        /*https://colorhunt.co/palette/ffea208dcbe69df1dfe3f6ff
+    <style>
+      /*https://colorhunt.co/palette/ffea208dcbe69df1dfe3f6ff
         PRIMARY: #2035FF 
         SECONDARY: #FFEA20
         ACCENT1: #8DCBE6
         ACCENT2: #9DF1DF
         ACCENT3: #E3F6FF */
-        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-        
-        body{
-            font-family: 'Bebas Neue', cursive;
-            background-color: #2035FF;
-            color: #E3F6FF;
-            text-align: center;
-            letter-spacing: 3px;
+      @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 
-        }
+      body {
+        font-family: "Bebas Neue", cursive;
+        background-color: #2035ff;
+        color: #e3f6ff;
+        text-align: center;
+        letter-spacing: 3px;
+      }
+
+      .container {
+        height: 50vh;
+        width: 50%;
+        background-color: #ffea20;
+        margin: 0 auto;
+        color: #e3f6ff;
+        text-align: center;
+        padding: 2%;
+        border: 10px solid black;
+      }
+
+
+      .box1{
+        background-color: red;
+        position: static;
+        /* top: 50%;
+        left: 50%; */
+      }
+
+      .box2{
+        background-color: blue;
+        position:relative; 
+        /* top: 10px; */
+        /* left: 10px;  */
+        bottom: 50px;
+        right: 50px;
+
+
+      }
+
+      .box3{
+        background-color:green;
+        /* position: fixed; */
+      }
+
+      .box4{
+        background-color: cyan;
+        /* position: abosolute; */
+      }
+
+      .box5{
+        background-color: magenta;
+        /* position: sticky; */
+      }
     </style>
-</head>
-<body>
-    <div class="container"></div>
-    <div class="box1">Box1</div>
-    <div class="box2">Box2</div>
-    <div class="box3">Box3</div>
-    <div class="box4">Box4</div>
-    <div class="box5">Box5</div>
-</body>
+  </head>
+  <body>
+    <h1>CSS POSITIONING PLAYGROUND EXERCISE</h1>
+    <div class="container">
+      <div class="box1">Box1 - Sticky</div>
+      <div class="box2">Box2 - Relative</div>
+      <div class="box3">Box3 - Fixed</div>
+      <div class="box4">Box4 - Absolute</div>
+      <div class="box5">Box5 - Sticky</div>
+    </div>
+  </body>
 </html>
